@@ -54,27 +54,29 @@
       <td>
         <fieldset id="fs_connection">
           <legend>Connection</legend>
-          <div><button id="btn_connect">Connect</button> <span id="connection_status"></span></div>
+          <div><span id="connection_status"></span></div>
+          <legend>Room selection</legend>
+          <div>
+            <input id="input_room" type="text"/>
+	  </div>
         </fieldset>
       </td>
       <td>
         <fieldset id="fs_publish" disabled>
           <legend>Publishing</legend>
-          <div><label><input type="checkbox" id="chk_simulcast"> Use Simulcast</label></div>
           <div>
             <button id="btn_webcam">Start Webcam</button>
             <span id="webcam_status"></span>
           </div>
-          <div>
-            <button id="btn_screen">Share Screen</button>
-            <span id="screen_status"></span>
-          </div>
         </fieldset>
       </td>
       <td>
-        <fieldset id="fs_subscribe" disabled>
-          <legend>Subscription</legend>
-          <div><button id="btn_subscribe">Subscribe</button> <span id="sub_status"></span></div>
+        <fieldset id="fs_subscribe">
+          <legend>Subscribing</legend>
+          <div>
+            <button id="btn_connect">Connect</button>
+            <span id="sub_status"></span>
+	  </div>
         </fieldset>
       </td>
     </tr>
